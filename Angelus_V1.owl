@@ -1,0 +1,680 @@
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/dc/terms/isPartOf> a ns2:ObjectProperty ;
+    rdfs:label "pertence A"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Foja> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/UnidadDocumentalCompuesta> .
+
+<http://purl.org/dc/terms/publisher> a ns2:ObjectProperty ;
+    rdfs:label "es Emitido Por"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Foja> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Organización> .
+
+<http://purl.org/dc/terms/title> a rdf:Property ;
+    rdfs:label "tiene Titulo"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Foja> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/> a ns2:ObjectProperty ;
+    rdfs:label ""@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Lugar> ;
+    rdfs:range <https://vocabularios.pruebascnb.org/v1.0/DemarcaciónInegi> .
+
+<https://ontologias.pruebascnb.org/v1.0/Asesinato> a ns2:Class ;
+    rdfs:label "Asesinato"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/Autor> a ns2:Class ;
+    rdfs:label "Autor"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/Buscador> a ns2:Class ;
+    rdfs:label "Buscador"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/Captura> a ns2:Class ;
+    rdfs:label "Captura"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/Colectivo> a ns2:Class ;
+    rdfs:label "Colectivo"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Organización> .
+
+<https://ontologias.pruebascnb.org/v1.0/Detencion> a ns2:Class ;
+    rdfs:label "Detencion"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/DisposiciónFinal> a ns2:Class ;
+    rdfs:label "Disposición Final"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/Familiar> a ns2:Class ;
+    rdfs:label "Familiar"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/Incomunicación> a ns2:Class ;
+    rdfs:label "Incomunicación"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/OrgArmada> a ns2:Class ;
+    rdfs:label "Org Armada"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Organización> .
+
+<https://ontologias.pruebascnb.org/v1.0/OrgCivil> a ns2:Class ;
+    rdfs:label "Org Civil"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Organización> .
+
+<https://ontologias.pruebascnb.org/v1.0/OrgGubernamental> a ns2:Class ;
+    rdfs:label "Org Gubernamental"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Organización> .
+
+<https://ontologias.pruebascnb.org/v1.0/OrgInternacional> a ns2:Class ;
+    rdfs:label "Org Internacional"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Organización> .
+
+<https://ontologias.pruebascnb.org/v1.0/OrgParamilitar> a ns2:Class ;
+    rdfs:label "Org Paramilitar"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Organización> .
+
+<https://ontologias.pruebascnb.org/v1.0/ServidorPúblico> a ns2:Class ;
+    rdfs:label "Servidor Público"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/Tortura> a ns2:Class ;
+    rdfs:label "Tortura"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/Traslado> a ns2:Class ;
+    rdfs:label "Traslado"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/contienePoligono> a ns2:ObjectProperty ;
+    rdfs:label "contiene Poligono"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Anotacion> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/PoligonoEnFoja> .
+
+<https://ontologias.pruebascnb.org/v1.0/contienePunto> a ns2:ObjectProperty ;
+    rdfs:label "contiene Punto"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/PoligonoEnFoja> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/PuntoEnPoligono> .
+
+<https://ontologias.pruebascnb.org/v1.0/coordX> a rdf:Property ;
+    rdfs:label "coord X"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/PuntoEnPoligono> ;
+    rdfs:range xsd:float .
+
+<https://ontologias.pruebascnb.org/v1.0/coordY> a rdf:Property ;
+    rdfs:label "coord Y"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/PuntoEnPoligono> ;
+    rdfs:range xsd:float .
+
+<https://ontologias.pruebascnb.org/v1.0/esAbuelAdoptivDe> a ns2:ObjectProperty ;
+    rdfs:label "es Abuel Adoptiv De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esAbuelDe> a ns2:ObjectProperty ;
+    rdfs:label "es Abuel De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esAutorDocumento> a ns2:ObjectProperty ;
+    rdfs:label "es Autor Documento"@es ;
+    rdfs:domain [ a ns2:Class ;
+            ns2:unionOf ( <https://ontologias.pruebascnb.org/v1.0/Persona> <https://ontologias.pruebascnb.org/v1.0/Organización> ) ] ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Foja> .
+
+<https://ontologias.pruebascnb.org/v1.0/esBuscadoPor> a ns2:ObjectProperty ;
+    rdfs:label "es Buscado Por"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esDenuncianteProcesoInstitucional> a ns2:ObjectProperty ;
+    rdfs:label "es Denunciante Proceso Institucional"@es ;
+    rdfs:domain [ a ns2:Class ;
+            ns2:unionOf ( <https://ontologias.pruebascnb.org/v1.0/Persona> <https://ontologias.pruebascnb.org/v1.0/Organización> ) ] ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/ProcesoInstitucional> .
+
+<https://ontologias.pruebascnb.org/v1.0/esDepositarioDocumento> a ns2:ObjectProperty ;
+    rdfs:label "es Depositario Documento"@es ;
+    rdfs:domain [ a ns2:Class ;
+            ns2:unionOf ( <https://ontologias.pruebascnb.org/v1.0/Persona> <https://ontologias.pruebascnb.org/v1.0/Organización> ) ] ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Foja> .
+
+<https://ontologias.pruebascnb.org/v1.0/esEncontradoPor> a ns2:ObjectProperty ;
+    rdfs:label "es Encontrado Por"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esEsposDe> a ns2:ObjectProperty ;
+    rdfs:label "es Espos De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esEventoEncadenado> a ns2:ObjectProperty ;
+    rdfs:label "es Evento Encadenado"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Evento> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/esExEsposDe> a ns2:ObjectProperty ;
+    rdfs:label "es Ex Espos De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esHermanAdoptivDe> a ns2:ObjectProperty ;
+    rdfs:label "es Herman Adoptiv De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esHermanDe> a ns2:ObjectProperty ;
+    rdfs:label "es Herman De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esHijAdoptivDe> a ns2:ObjectProperty ;
+    rdfs:label "es Hij Adoptiv De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esHijDe> a ns2:ObjectProperty ;
+    rdfs:label "es Hij De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esInculpadoProcesoInstitucional> a ns2:ObjectProperty ;
+    rdfs:label "es Inculpado Proceso Institucional"@es ;
+    rdfs:domain [ a ns2:Class ;
+            ns2:unionOf ( <https://ontologias.pruebascnb.org/v1.0/Persona> <https://ontologias.pruebascnb.org/v1.0/Organización> ) ] ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/ProcesoInstitucional> .
+
+<https://ontologias.pruebascnb.org/v1.0/esLugarDeEvento> a ns2:ObjectProperty ;
+    rdfs:label "es Lugar De Evento"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Lugar> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/esLugarDeResguardoDocumento> a ns2:ObjectProperty ;
+    rdfs:label "es Lugar De Resguardo Documento"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Lugar> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Foja> .
+
+<https://ontologias.pruebascnb.org/v1.0/esMiembroOrganizacion> a ns2:ObjectProperty ;
+    rdfs:label "es Miembro Organizacion"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Organización> .
+
+<https://ontologias.pruebascnb.org/v1.0/esNueraYernoDe> a ns2:ObjectProperty ;
+    rdfs:label "es Nuera Yerno De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esOrdenoEvento> a ns2:ObjectProperty ;
+    rdfs:label "es Ordeno Evento"@es ;
+    rdfs:domain [ a ns2:Class ;
+            ns2:unionOf ( <https://ontologias.pruebascnb.org/v1.0/Perpetrador> <https://ontologias.pruebascnb.org/v1.0/OrgPerpetradora> ) ] ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/esParejaDe> a ns2:ObjectProperty ;
+    rdfs:label "es Pareja De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esParteDeLugar> a ns2:ObjectProperty ;
+    rdfs:label "es Parte De Lugar"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Lugar> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Lugar> .
+
+<https://ontologias.pruebascnb.org/v1.0/esPerpetradorDeEvento> a ns2:ObjectProperty ;
+    rdfs:label "es Perpetrador De Evento"@es ;
+    rdfs:domain [ a ns2:Class ;
+            ns2:unionOf ( <https://ontologias.pruebascnb.org/v1.0/Perpetrador> <https://ontologias.pruebascnb.org/v1.0/OrgPerpetradora> ) ] ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/esPrimDe> a ns2:ObjectProperty ;
+    rdfs:label "es Prim De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esProgenitorAdoptivDe> a ns2:ObjectProperty ;
+    rdfs:label "es Progenitor Adoptiv De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esProgenitorDe> a ns2:ObjectProperty ;
+    rdfs:label "es Progenitor De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esRepresentadoPor> a ns2:ObjectProperty ;
+    rdfs:label "es Representado Por"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esResponsableProcesoInstitucional> a ns2:ObjectProperty ;
+    rdfs:label "es Responsable Proceso Institucional"@es ;
+    rdfs:domain [ a ns2:Class ;
+            ns2:unionOf ( <https://ontologias.pruebascnb.org/v1.0/Persona> <https://ontologias.pruebascnb.org/v1.0/Organización> ) ] ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/ProcesoInstitucional> .
+
+<https://ontologias.pruebascnb.org/v1.0/esSobrinDe> a ns2:ObjectProperty ;
+    rdfs:label "es Sobrin De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esSubordinadoDe> a ns2:ObjectProperty ;
+    rdfs:label "es Subordinado De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esSuegrDe> a ns2:ObjectProperty ;
+    rdfs:label "es Suegr De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esTiDe> a ns2:ObjectProperty ;
+    rdfs:label "es Ti De"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://ontologias.pruebascnb.org/v1.0/esVictimaProcesoInstitucional> a ns2:ObjectProperty ;
+    rdfs:label "es Victima Proceso Institucional"@es ;
+    rdfs:domain [ a ns2:Class ;
+            ns2:unionOf ( <https://ontologias.pruebascnb.org/v1.0/Persona> <https://ontologias.pruebascnb.org/v1.0/Organización> ) ] ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/ProcesoInstitucional> .
+
+<https://ontologias.pruebascnb.org/v1.0/esVíctimaDeEvento> a ns2:ObjectProperty ;
+    rdfs:label "es Víctima De Evento"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/VíctimaDirecta> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Evento> .
+
+<https://ontologias.pruebascnb.org/v1.0/estaEnLugar> a ns2:ObjectProperty ;
+    rdfs:label "esta En Lugar"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Lugar> .
+
+<https://ontologias.pruebascnb.org/v1.0/fechaAnotacion> a rdf:Property ;
+    rdfs:label "fecha Anotacion"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Anotacion> ;
+    rdfs:range xsd:dateTime .
+
+<https://ontologias.pruebascnb.org/v1.0/finalCotaInferior> a rdf:Property ;
+    rdfs:label "final Cota Inferior"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/PeriodoTemporal> ;
+    rdfs:range xsd:dateTime .
+
+<https://ontologias.pruebascnb.org/v1.0/finalCotaSuperior> a rdf:Property ;
+    rdfs:label "final Cota Superior"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/PeriodoTemporal> ;
+    rdfs:range xsd:dateTime .
+
+<https://ontologias.pruebascnb.org/v1.0/inicioCotaInferior> a rdf:Property ;
+    rdfs:label "inicio Cota Inferior"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/PeriodoTemporal> ;
+    rdfs:range xsd:dateTime .
+
+<https://ontologias.pruebascnb.org/v1.0/inicioCotaSuperior> a rdf:Property ;
+    rdfs:label "inicio Cota Superior"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/PeriodoTemporal> ;
+    rdfs:range xsd:dateTime .
+
+<https://ontologias.pruebascnb.org/v1.0/loHizoAnotador> a rdf:Property ;
+    rdfs:label "lo Hizo Anotador"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Anotacion> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/perteneceAOrganización> a ns2:ObjectProperty ;
+    rdfs:label "pertenece AOrganización"@es ;
+    rdfs:domain [ a ns2:Class ;
+            ns2:unionOf ( <https://ontologias.pruebascnb.org/v1.0/Persona> <https://ontologias.pruebascnb.org/v1.0/Organización> <https://ontologias.pruebascnb.org/v1.0/Lugar> ) ] ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Organización> .
+
+<https://ontologias.pruebascnb.org/v1.0/seRefiereAFoja> a ns2:ObjectProperty ;
+    rdfs:label "se Refiere AFoja"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Anotacion> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Foja> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneAlias> a rdf:Property ;
+    rdfs:label "tiene Alias"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneAltura> a rdf:Property ;
+    rdfs:label "tiene Altura"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range xsd:float .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneAntecesorEnUnidadDocumentalCompuesta> a ns2:ObjectProperty ;
+    rdfs:label "tiene Antecesor En Unidad Documental Compuesta"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Foja> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Foja> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneApellidoMaterno> a rdf:Property ;
+    rdfs:label "tiene Apellido Materno"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneApellidoPaterno> a rdf:Property ;
+    rdfs:label "tiene Apellido Paterno"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneColor> a rdf:Property ;
+    rdfs:label "tiene Color"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/PoligonoEnFoja> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneConfianza> a ns2:ObjectProperty ;
+    rdfs:label "tiene Confianza"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    rdfs:range <https://vocabularios.pruebascnb.org/v1.0/Confianza> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneDatoDeContacto> a rdf:Property ;
+    rdfs:label "tiene Dato De Contacto"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneFoliacion> a rdf:Property ;
+    rdfs:label "tiene Foliacion"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Foja> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneFolio> a rdf:Property ;
+    rdfs:label "tiene Folio"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ProcesoInstitucional> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneGenero> a ns2:ObjectProperty ;
+    rdfs:label "tiene Genero"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://vocabularios.pruebascnb.org/v1.0/Genero> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneIDOficial> a rdf:Property ;
+    rdfs:label "tiene IDOficial"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneLatitud> a rdf:Property ;
+    rdfs:label "tiene Latitud"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Lugar> ;
+    rdfs:range xsd:float .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneLongitud> a rdf:Property ;
+    rdfs:label "tiene Longitud"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Lugar> ;
+    rdfs:range xsd:float .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneLugarInegi> a ns2:ObjectProperty ;
+    rdfs:label "tiene Lugar Inegi"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Lugar> ;
+    rdfs:range <https://vocabularios.pruebascnb.org/v1.0/DemarcaciónInegi> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneLugarMuerte> a ns2:ObjectProperty ;
+    rdfs:label "tiene Lugar Muerte"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Lugar> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneLugarNacimiento> a ns2:ObjectProperty ;
+    rdfs:label "tiene Lugar Nacimiento"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Lugar> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneLugarTrabajo> a ns2:ObjectProperty ;
+    rdfs:label "tiene Lugar Trabajo"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Lugar> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneLugarVivienda> a ns2:ObjectProperty ;
+    rdfs:label "tiene Lugar Vivienda"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Lugar> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneMDarchivistico> a rdf:Property ;
+    rdfs:label "tiene MDarchivistico"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ProcesoInstitucional> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneMDcatálogo> a rdf:Property ;
+    rdfs:label "tiene MDcatálogo"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ProcesoInstitucional> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneMetodoInferencia> a ns2:ObjectProperty ;
+    rdfs:label "tiene Metodo Inferencia"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    rdfs:range <https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneNombre> a rdf:Property ;
+    rdfs:label "tiene Nombre"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneNombreAlternativo> a rdf:Property ;
+    rdfs:label "tiene Nombre Alternativo"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneNombresPropios> a rdf:Property ;
+    rdfs:label "tiene Nombres Propios"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneObservaciones> a rdf:Property ;
+    rdfs:label "tiene Observaciones"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneOcupacion> a rdf:Property ;
+    rdfs:label "tiene Ocupacion"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneOrigenDeAnotación> a ns2:ObjectProperty ;
+    rdfs:label "tiene Origen De Anotación"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Anotacion> .
+
+<https://ontologias.pruebascnb.org/v1.0/tienePeriodoDeValidez> a ns2:ObjectProperty ;
+    rdfs:label "tiene Periodo De Validez"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/PeriodoTemporal> .
+
+<https://ontologias.pruebascnb.org/v1.0/tienePeso> a rdf:Property ;
+    rdfs:label "tiene Peso"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range xsd:float .
+
+<https://ontologias.pruebascnb.org/v1.0/tienePunto> a rdf:Property ;
+    rdfs:label "tiene Punto"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/PoligonoEnFoja> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneSellos> a ns2:ObjectProperty ;
+    rdfs:label "tiene Sellos"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Foja> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Organización> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneSoporteDocumental> a ns2:ObjectProperty ;
+    rdfs:label "tiene Soporte Documental"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Foja> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneSucesorEnUnidadDocumentalCompuesta> a ns2:ObjectProperty ;
+    rdfs:label "tiene Sucesor En Unidad Documental Compuesta"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Foja> ;
+    rdfs:range <https://ontologias.pruebascnb.org/v1.0/Foja> .
+
+<https://ontologias.pruebascnb.org/v1.0/tieneTatuaje> a rdf:Property ;
+    rdfs:label "tiene Tatuaje"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/Persona> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/tienenSiglas> a rdf:Property ;
+    rdfs:label "tienen Siglas"@es ;
+    rdfs:domain <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    rdfs:range xsd:string .
+
+<https://ontologias.pruebascnb.org/v1.0/UnidadDocumentalCompuesta> a ns2:Class ;
+    rdfs:label "Unidad Documental Compuesta"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/ThingsReality> .
+
+<https://ontologias.pruebascnb.org/v1.0/VíctimaDirecta> a ns2:Class ;
+    rdfs:label "Víctima Directa"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://vocabularios.pruebascnb.org/v1.0/Confianza/Negativa> a ns2:Class,
+        ns1:Concept ;
+    rdfs:label "Negativa"@es ;
+    rdfs:subClassOf <https://vocabularios.pruebascnb.org/v1.0/Confianza> ;
+    ns1:broader <https://vocabularios.pruebascnb.org/v1.0/Confianza> ;
+    ns1:prefLabel "Negativa"@es .
+
+<https://vocabularios.pruebascnb.org/v1.0/Confianza/Neutra> a ns2:Class,
+        ns1:Concept ;
+    rdfs:label "Neutra"@es ;
+    rdfs:subClassOf <https://vocabularios.pruebascnb.org/v1.0/Confianza> ;
+    ns1:broader <https://vocabularios.pruebascnb.org/v1.0/Confianza> ;
+    ns1:prefLabel "Neutra"@es .
+
+<https://vocabularios.pruebascnb.org/v1.0/Confianza/Positiva> a ns2:Class,
+        ns1:Concept ;
+    rdfs:label "Positiva"@es ;
+    rdfs:subClassOf <https://vocabularios.pruebascnb.org/v1.0/Confianza> ;
+    ns1:broader <https://vocabularios.pruebascnb.org/v1.0/Confianza> ;
+    ns1:prefLabel "Positiva"@es .
+
+<https://vocabularios.pruebascnb.org/v1.0/Genero/Hombre> a ns2:Class,
+        ns1:Concept ;
+    rdfs:label "Hombre"@es ;
+    rdfs:subClassOf <https://vocabularios.pruebascnb.org/v1.0/Genero> ;
+    ns1:broader <https://vocabularios.pruebascnb.org/v1.0/Genero> ;
+    ns1:prefLabel "Hombre"@es .
+
+<https://vocabularios.pruebascnb.org/v1.0/Genero/Mujer> a ns2:Class,
+        ns1:Concept ;
+    rdfs:label "Mujer"@es ;
+    rdfs:subClassOf <https://vocabularios.pruebascnb.org/v1.0/Genero> ;
+    ns1:broader <https://vocabularios.pruebascnb.org/v1.0/Genero> ;
+    ns1:prefLabel "Mujer"@es .
+
+<https://vocabularios.pruebascnb.org/v1.0/Genero/Otro> a ns2:Class,
+        ns1:Concept ;
+    rdfs:label "Otro"@es ;
+    rdfs:subClassOf <https://vocabularios.pruebascnb.org/v1.0/Genero> ;
+    ns1:broader <https://vocabularios.pruebascnb.org/v1.0/Genero> ;
+    ns1:prefLabel "Otro"@es .
+
+<https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia/Autómático> a ns2:Class,
+        ns1:Concept ;
+    rdfs:label "Autómático"@es ;
+    rdfs:subClassOf <https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia> ;
+    ns1:broader <https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia> ;
+    ns1:prefLabel "Autómático"@es .
+
+<https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia/Inferido> a ns2:Class,
+        ns1:Concept ;
+    rdfs:label "Inferido"@es ;
+    rdfs:subClassOf <https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia> ;
+    ns1:broader <https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia> ;
+    ns1:prefLabel "Inferido"@es .
+
+<https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia/Textual> a ns2:Class,
+        ns1:Concept ;
+    rdfs:label "Textual"@es ;
+    rdfs:subClassOf <https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia> ;
+    ns1:broader <https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia> ;
+    ns1:prefLabel "Textual"@es .
+
+<https://ontologias.pruebascnb.org/v1.0/OrgPerpetradora> a ns2:Class ;
+    rdfs:label "Org Perpetradora"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Organización> .
+
+<https://ontologias.pruebascnb.org/v1.0/Perpetrador> a ns2:Class ;
+    rdfs:label "Perpetrador"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/Persona> .
+
+<https://vocabularios.pruebascnb.org/v1.0/DemarcaciónInegi> a ns2:Class,
+        ns1:Concept,
+        <https://ontologias.pruebascnb.org/v1.0/Catalogo> ;
+    rdfs:label "Demarcación Inegi"@es ;
+    ns2:sameAs <catalogoInegiRDF> ;
+    ns1:prefLabel "Demarcación Inegi"@es .
+
+<https://ontologias.pruebascnb.org/v1.0/PuntoEnPoligono> a ns2:Class ;
+    rdfs:label "Punto En Poligono"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/ThingsReality> .
+
+<https://ontologias.pruebascnb.org/v1.0/PoligonoEnFoja> a ns2:Class ;
+    rdfs:label "Poligono En Foja"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/ThingsReality> .
+
+<https://ontologias.pruebascnb.org/v1.0/Anotacion> a ns2:Class ;
+    rdfs:label "Anotacion"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/ThingsReality> .
+
+<https://ontologias.pruebascnb.org/v1.0/PeriodoTemporal> a ns2:Class ;
+    rdfs:label "Periodo Temporal"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> .
+
+<https://ontologias.pruebascnb.org/v1.0/ThingsReality> a ns2:Class ;
+    rdfs:label "Things Reality"@es .
+
+<https://ontologias.pruebascnb.org/v1.0/ProcesoInstitucional> a ns2:Class ;
+    rdfs:label "Proceso Institucional"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> .
+
+<https://vocabularios.pruebascnb.org/v1.0/Confianza> a ns2:Class,
+        ns1:Concept,
+        <https://ontologias.pruebascnb.org/v1.0/Catalogo> ;
+    rdfs:label "Confianza"@es ;
+    ns1:narrower <https://vocabularios.pruebascnb.org/v1.0/Confianza/Negativa>,
+        <https://vocabularios.pruebascnb.org/v1.0/Confianza/Neutra>,
+        <https://vocabularios.pruebascnb.org/v1.0/Confianza/Positiva> ;
+    ns1:prefLabel "Confianza"@es .
+
+<https://vocabularios.pruebascnb.org/v1.0/Genero> a ns2:Class,
+        ns1:Concept,
+        <https://ontologias.pruebascnb.org/v1.0/Catalogo> ;
+    rdfs:label "Genero"@es ;
+    ns1:narrower <https://vocabularios.pruebascnb.org/v1.0/Genero/Hombre>,
+        <https://vocabularios.pruebascnb.org/v1.0/Genero/Mujer>,
+        <https://vocabularios.pruebascnb.org/v1.0/Genero/Otro> ;
+    ns1:prefLabel "Genero"@es .
+
+<https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia> a ns2:Class,
+        ns1:Concept,
+        <https://ontologias.pruebascnb.org/v1.0/Catalogo> ;
+    rdfs:label "Metodo Inferencia"@es ;
+    ns1:narrower <https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia/Autómático>,
+        <https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia/Inferido>,
+        <https://vocabularios.pruebascnb.org/v1.0/MetodoInferencia/Textual> ;
+    ns1:prefLabel "Metodo Inferencia"@es .
+
+<https://ontologias.pruebascnb.org/v1.0/Evento> a ns2:Class ;
+    rdfs:label "Evento"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> .
+
+<https://ontologias.pruebascnb.org/v1.0/Foja> a ns2:Class ;
+    rdfs:label "Foja"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/ThingsReality> .
+
+<https://ontologias.pruebascnb.org/v1.0/Lugar> a ns2:Class ;
+    rdfs:label "Lugar"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    ns2:sameAs <http://www.geonames.org/ontology#Feature> .
+
+<https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> a ns2:Class ;
+    rdfs:label "Things Angelus"@es .
+
+<https://ontologias.pruebascnb.org/v1.0/Organización> a ns2:Class ;
+    rdfs:label "Organización"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    ns2:sameAs <http://xmlns.com/foaf/0.1/Organization> .
+
+<https://ontologias.pruebascnb.org/v1.0/Persona> a ns2:Class ;
+    rdfs:label "Persona"@es ;
+    rdfs:subClassOf <https://ontologias.pruebascnb.org/v1.0/ThingsAngelus> ;
+    ns2:sameAs <http://xmlns.com/foaf/0.1/Person> .
+
